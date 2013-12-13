@@ -1,10 +1,27 @@
+module: hypermark_cowboy_protocol
+
 providers:
   input: hypermark_cowboy_input
   auth: hypermark_cowboy_simple_secrets
 
-routes:
-  GET /: index.init
-  GET /apps: app.init
-  POST /apps: app.create
+port: $PORT
 
+## protocol specific config
+
+routes:
+  index.init:
+    method: GET
+    path: /
+  
+  app.list:
+    method: GET
+    path: /apps
+
+  app.create:
+    method: POST
+    path: /apps
+
+  app.read:
+    method: GET
+    path: /apps/:app
 

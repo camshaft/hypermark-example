@@ -1,0 +1,12 @@
+hypermark_hyperjson_serializer:
+  - application/hyper+json
+  - application/json
+
+hypermark_hyperproto_serializer:
+  - application/hyper+protobuf
+
+hypermark_collectionjson_serializer:
+  - application/collection+json
+
+hypermark_haljson_serializer:
+  - application/hal+json

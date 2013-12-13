@@ -1,0 +1,22 @@
+app: hypermark-example
+
+resources:
+  - resources/*.yml
+
+protocols:
+  http: protocols/http.yml
+
+serializers:
+  - serializers.yml
+
+deserializers:
+  - deserializers.yml
+
+processes:
+  - processes.yml
+
+middleware:
+  - middleware.yml
+
+maps:
+  - maps.yml

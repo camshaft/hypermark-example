@@ -6,5 +6,6 @@ accounts.get:
     - logger
 
 accounts.remove:
-  method: removeAccount
   process: node_accounts
+  method: removeAccount
+

@@ -1,0 +1,3 @@
+logger:
+  module: hypermark_process_logger
+

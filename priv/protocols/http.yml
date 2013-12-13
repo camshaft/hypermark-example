@@ -1,0 +1,10 @@
+providers:
+  input: hypermark_cowboy_input
+  auth: hypermark_cowboy_simple_secrets
+
+routes:
+  GET /: index.init
+  GET /apps: app.init
+  POST /apps: app.create
+
+

@@ -1,10 +1,10 @@
-app: hypermark-example
+app: hypermark_example
 
 resources:
   - resources/*.yml
 
 protocols:
-  http: protocols/http.yml
+  - protocols/http.yml
 
 serializers:
   - serializers.yml
@@ -20,4 +20,3 @@ middleware:
 
 maps:
   - maps.yml
-

@@ -2,10 +2,7 @@ users.relation_to:
 
 accounts.get:
   process: accounts_riak
-  middleware:
-    - logger
 
 accounts.remove:
   process: node_accounts
   method: removeAccount
-

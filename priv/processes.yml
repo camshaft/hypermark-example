@@ -3,12 +3,16 @@ users:
   module: hypermark_example_users
   functions:
     relation_to/2:
+      middleware:
+        - memoize
 
 accounts_riak:
   type: local
   module: hypermark_example_accounts_riak
   functions:
     get/2:
+      middleware:
+        - logger
 
 accounts_node:
   type: port

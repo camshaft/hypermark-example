@@ -1,4 +1,4 @@
-module: hypermark_cowboy_protocol
+module: hypermark_protocol_cowboy_http
 
 providers:
   input: hypermark_cowboy_input
@@ -24,4 +24,3 @@ routes:
   app.read:
     method: GET
     path: /apps/:app
-

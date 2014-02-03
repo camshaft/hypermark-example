@@ -1,0 +1,6 @@
+type: hypermark_zmq_process
+address: zmq://0.0.0.0:5123
+count: 5-10
+concurrency: 100
+
+list/1:

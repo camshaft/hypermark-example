@@ -1,10 +1,13 @@
 app: hypermark_example
 
-resources:
-  - resources/*.yml
-
 protocols:
   - protocols/http.yml
+
+processes:
+  - processes/users.yml
+  - processes/accounts_riak.yml
+  - processes/accounts_node.yml
+  - processes/apps_zmq.yml
 
 serializers:
   - serializers.yml
@@ -12,11 +15,11 @@ serializers:
 deserializers:
   - deserializers.yml
 
-processes:
-  - processes.yml
+commands:
+  - commands.yml
 
 middleware:
   - middleware.yml
 
-maps:
-  - maps.yml
+providers:
+  - providers.yml

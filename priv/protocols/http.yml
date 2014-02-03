@@ -1,7 +1,6 @@
 module: hypermark_protocol_cowboy_http
 
 providers:
-  input: hypermark_cowboy_input
   auth: hypermark_cowboy_simple_secrets
 
 port: $PORT
@@ -12,7 +11,7 @@ routes:
   index.init:
     method: GET
     path: /
-  
+
   app.list:
     method: GET
     path: /apps

@@ -1,0 +1,6 @@
+type: local
+module: hypermark_example_accounts_riak
+
+get/2:
+  middleware:
+    - logger

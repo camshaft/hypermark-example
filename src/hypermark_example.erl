@@ -1,10 +1,23 @@
 -module(hypermark_example).
 
+-export([start/0]).
+-export([serializers/0]).
+-export([deserializers/0]).
+-export([commands/0]).
+-export([providers/0]).
+
 start() ->
-  ensure:started(hypermark),
+  ok = hypermark_example_protocols:start(),
+  application:start(hypermark_example).
 
-  %% ensure the protocols are started
-  ensure:started(hypermark_cowboy_http),
-  ensure:started(hypermark_cowboy_ws),
+serializers() ->
+  hypermark_example_serializers.
 
-  ensure:started(hypermark_example).
+deserializers() ->
+  hypermark_example_deserializers.
+
+commands() ->
+  hypermark_example_commands.
+
+providers() ->
+  hypermark_example_providers.

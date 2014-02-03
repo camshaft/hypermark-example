@@ -1,0 +1,6 @@
+type: hypermark_zmq_sup
+command: node priv/js/accounts
+count: 5-10
+timeout: 10ms
+
+removeAccount/2:

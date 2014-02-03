@@ -1,0 +1,6 @@
+type: local
+module: hypermark_example_users
+
+relation_to/2:
+  middleware:
+    - logger

@@ -1,0 +1,11 @@
+{application, hypermark_example, [
+  {description, "Example hypermark application"},
+  {vsn, "0.1"},
+  {modules, []},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {mod, {hypermark_example_app, []}}
+]}.

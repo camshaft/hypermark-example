@@ -1,8 +1,8 @@
 -module(hypermark_example_middleware).
 
--export([resolve/3]).
+-export([resolve/1]).
 
 resolve(logger) ->
-  fun hypermark_process_logger:execute/2;
+  hypermark_process_logger:init([]);
 resolve(Module) ->
-  erlang:error(no_resolution, [Module]).
+  {error, {undef, Module}}.

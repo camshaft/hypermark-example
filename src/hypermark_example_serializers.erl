@@ -1,5 +1,9 @@
 -module(hypermark_example_serializers).
 
+-export([types/0]).
+-export([serialize/2]).
+-export([serialize/3]).
+
 types() ->
   [
     <<"application/hyper+json">>,
